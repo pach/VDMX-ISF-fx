@@ -1,5 +1,5 @@
 /*{
-	"CREDIT": "by pach, fork from zoidberg",
+	"CREDIT": "by pach, based on FalseColor.fr by zoidberg",
 	"CATEGORIES": [
 		"Color Effect"
 	],
