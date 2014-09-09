@@ -49,5 +49,7 @@ void main() {
 	vec4 color1 = mix(darkColor, mediumColor, clamp(luminance, 0., 0.5)*2.);
 	vec4 color2 = mix(mediumColor, brightColor, clamp(luminance, 0.5, 1.)*2.-1.);
 
-	gl_FragColor = mix(color1, color2, luminance);
+	vec4 outColor = mix(color1, color2, luminance);
+    outColor.a = srcPixel.a;
+    gl_FragColor = outColor;
 }
